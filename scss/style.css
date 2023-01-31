@@ -5,23 +5,14 @@
   list-style: none;
 }
 
-.container {
-  margin-left: 135px;
-  margin-right: 135px;
-  max-width: 1170px;
-  width: 100%;
-  max-height: 757px;
-  height: 100%;
-}
-
-.container-header {
+header {
   max-width: 473px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
 }
 
-.container-header > p {
+header > p {
   margin-top: 121px;
   font-weight: 500;
   font-size: 18px;
@@ -41,8 +32,14 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: #FFCC00;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container-slider {
@@ -65,8 +62,6 @@ h2 {
 .container-slider--image::after {
   content: "";
   height: 560px;
-  left: 585px;
-  top: 197px;
   border: 1px solid #FFCC00;
   display: inline-block;
   margin-left: 85px;
@@ -102,13 +97,14 @@ h2::after {
 
 ul {
   font-size: 0;
-  padding-left: 151px;
+  display: flex;
   padding-bottom: 49px;
+  justify-content: center;
 }
 
 li {
-  display: inline-block;
   margin-right: 5px;
+  display: inline-block;
 }
 
 li > svg:hover {
@@ -152,14 +148,26 @@ button:hover {
   color: #FFCC00;
 }
 
-.paragraph::after {
-  content: "";
-  width: 50px;
-  border: 4px dashed #FFCC00;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.dashed-line {
+  padding-bottom: 29px;
+}
+
+.dashed-line .line-1 {
+  width: 10px;
+  height: 4px;
+  background: #FFCC00;
+}
+
+.dashed-line .line-2 {
+  width: 20px;
+  height: 4px;
+  background: #FFCC00;
+}
+
+.dashed-line .line-3 {
+  width: 10px;
+  height: 4px;
+  background: #FFCC00;
 }
 
 .container {
